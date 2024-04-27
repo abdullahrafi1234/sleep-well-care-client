@@ -8,6 +8,12 @@ const Navbar = () => {
         <li><NavLink to={'/all-tourists-spot'}>All Tourists Spot</NavLink></li>
         <li><NavLink to={'/add-tourists-spot'}>Add Tourists Spot</NavLink></li>
         <li><NavLink to={'/mylist'}>My List</NavLink></li>
+
+        {/* {
+            user? <li><NavLink to={'/update-profile'}>Update Profile</NavLink></li>:''
+        } */}
+
+        <li><NavLink to={'/contact-us'}>Contact Us</NavLink></li>
         <li><NavLink to={'/register'}>Register</NavLink></li>
     </>
 
