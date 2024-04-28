@@ -24,7 +24,7 @@ const Slider = () => {
                 <SwiperSlide>
                     <div className="mt-12">
                         <div className="hero p-8 rounded-3xl bg-base-200">
-                            <div className="hero-content lg:h-[500px] flex-col lg:flex-row-reverse ">
+                            <div className="hero-content lg:h-[400px] flex-col lg:flex-row-reverse ">
                                 <div className="lg:ml-36">
                                     <img width={'1050px'} src="photo1.avif" className=" rounded-lg shadow-2xl" />
                                 </div>
@@ -41,7 +41,7 @@ const Slider = () => {
                 <SwiperSlide>
                     <div className="mt-12">
                         <div className="hero p-8 rounded-3xl bg-base-200">
-                            <div className="hero-content lg:h-[500px] flex-col lg:flex-row-reverse ">
+                            <div className="hero-content lg:h-[400px] flex-col lg:flex-row-reverse ">
                                 <div className="lg:ml-36">
                                     <img width={'1050px'} src="photo3.jpeg" className=" w-[1050px] rounded-lg shadow-2xl" />
                                 </div>
@@ -58,7 +58,7 @@ const Slider = () => {
                 <SwiperSlide>
                     <div className="mt-12">
                         <div className="hero p-8 rounded-3xl bg-base-200">
-                            <div className="hero-content lg:h-[500px] flex-col lg:flex-row-reverse ">
+                            <div className="hero-content lg:h-[400px] flex-col lg:flex-row-reverse ">
                                 <div className="lg:ml-36">
                                     <img width={'1050px'} src="photo4.jpeg" className=" w-[1050px] rounded-lg shadow-2xl" />
                                 </div>
@@ -75,7 +75,7 @@ const Slider = () => {
                 <SwiperSlide>
                     <div className="mt-12">
                         <div className="hero p-8 rounded-3xl bg-base-200">
-                            <div className="hero-content lg:h-[500px] flex-col lg:flex-row-reverse ">
+                            <div className="hero-content lg:h-[400px] flex-col lg:flex-row-reverse ">
                                 <div className="lg:ml-36">
                                     <img width={'1050px'} src="photo5.jpeg" className=" w-[1050px] rounded-lg shadow-2xl" />
                                 </div>
@@ -92,7 +92,7 @@ const Slider = () => {
                 <SwiperSlide>
                     <div className="mt-12">
                         <div className="hero p-8 rounded-3xl bg-base-200">
-                            <div className="hero-content lg:h-[500px] flex-col lg:flex-row-reverse ">
+                            <div className="hero-content lg:h-[400px] flex-col lg:flex-row-reverse ">
                                 <div className="lg:ml-36">
                                     <img width={'1050px'} src="photo6.jpg" className=" w-[1050px] rounded-lg shadow-2xl" />
                                 </div>
@@ -109,7 +109,7 @@ const Slider = () => {
                 <SwiperSlide>
                     <div className="mt-12">
                         <div className="hero p-8 rounded-3xl bg-base-200">
-                            <div className="hero-content lg:h-[500px] flex-col lg:flex-row-reverse ">
+                            <div className="hero-content lg:h-[400px] flex-col lg:flex-row-reverse ">
                                 <div className="lg:ml-36">
                                     <img width={'1050px'} src="photo7.jpg" className=" w-[1050px] rounded-lg shadow-2xl" />
                                 </div>
