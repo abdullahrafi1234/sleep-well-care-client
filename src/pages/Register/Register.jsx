@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 // import { Helmet } from "react-helmet-async";
 
 const Register = () => {
@@ -15,7 +17,9 @@ const Register = () => {
         e.preventDefault();
         const email = e.target.email.value
         const password = e.target.password.value;
-        console.log(email, password)
+        const photo = e.target.photo.value;
+        const name = e.target.name.value;
+        console.log(email, password, name, photo)
 
 
         setError('')
@@ -42,6 +46,12 @@ const Register = () => {
                 navigate(location?.state ? location.state: '/' )
                 // alert('Logged in Successfully!')
                 //sweet alert lagbe
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Logged in Successfully',
+                    icon: 'Success',
+                    confirmButtonText: 'OK'
+                  })
             })
             .catch(error => {
                 console.log(error);
@@ -53,9 +63,9 @@ const Register = () => {
 
     return (
         <div className="max-w-lg mx-auto my-36">
-        {/* <Helmet>
+        <Helmet>
         <title>SleepWell | Register</title>
-        </Helmet> */}
+        </Helmet>
 
         <p className="text-center font-medium text-2xl pb-12">Create Your Account</p>
         <form onSubmit={handleRegister} className="card-body border bg-gray-100 rounded-lg">

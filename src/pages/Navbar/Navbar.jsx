@@ -1,20 +1,31 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
 
     const navLinks = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/all-tourists-spot'}>All Tourists Spot</NavLink></li>
         <li><NavLink to={'/add-tourists-spot'}>Add Tourists Spot</NavLink></li>
-        <li><NavLink to={'/mylist'}>My List</NavLink></li>
+        <li><NavLink to={'/myList'}>My List</NavLink></li>
 
         {/* {
-            user? <li><NavLink to={'/update-profile'}>Update Profile</NavLink></li>:''
+            user ? <li><NavLink to={'/update-profile'}>Update Profile</NavLink></li> : ''
         } */}
 
-        <li><NavLink to={'/contact-us'}>Contact Us</NavLink></li>
-        <li><NavLink to={'/register'}>Register</NavLink></li>
+        {/* <li><NavLink to={'/contact-us'}>Contact Us</NavLink></li> */}
+        {
+            !user ? <li><NavLink to={'/register'}>Register</NavLink></li> : ''
+        }
     </>
 
     return (
@@ -41,9 +52,20 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <div className="">
-                    <Link className="btn rounded-xl bg-orange-500 text-white border-none" to={'/login'}>Login</Link>
-                </div>
+                {
+                    user ?
+                        <div className="flex gap-3 items-center">
+
+                            <button data-tip={user?.displayName || 'Name Not Found'} className=" text-white border-none tooltip tooltip-bottom w-12">
+                                <img className="rounded-full" src={user?.photoURL || 'user.png'} /></button>
+
+                            <button onClick={handleLogOut} data-tip={user?  user?.displayName : 'Name Not Found'} className="btn rounded-xl bg-orange-500 text-white border-none">Log Out</button>
+                        </div> :
+                        <div className="">
+                            <Link className="btn rounded-xl bg-orange-500 text-white border-none" to={'/login'}>Login</Link>
+                        </div>
+
+                }
             </div>
             {/* <div className="navbar-end">
             <Link className="btn rounded-xl bg-orange-500 text-white" to={'/login'}>Log in</Link>
