@@ -54,13 +54,25 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ?
-                        <div className="flex gap-3 items-center">
+                        // <div className="flex gap-3 items-center">
 
-                            <button data-tip={user?.displayName || 'Name Not Found'} className=" text-white border-none tooltip tooltip-bottom w-12">
-                                <img className="rounded-full" src={user?.photoURL || 'user.png'} /></button>
+                        //     <button data-tip={user?.displayName || 'Name Not Found'} className=" text-white border-none tooltip tooltip-bottom w-12">
+                        //         <img className="rounded-full" src={user?.photoURL || 'user.png'} /></button>
 
-                            <button onClick={handleLogOut} data-tip={user?  user?.displayName : 'Name Not Found'} className="btn rounded-xl bg-orange-500 text-white border-none">Log Out</button>
-                        </div> :
+                        //     <button onClick={handleLogOut} data-tip={user?  user?.displayName : 'Name Not Found'} className="btn rounded-xl bg-orange-500 text-white border-none">Log Out</button>
+                        // </div> 
+
+                        <div className="dropdown dropdown-hover mr-8">
+                            <div tabIndex={0} role="button" className=" hover m-1">
+                                <img className="w-12 rounded-full" src={user?.photoURL || 'user.png'} alt="" />
+                            </div>
+                            <ul tabIndex={0} className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-lg w-[120px]">
+                                <li>{user?.displayName || 'Name Not Found'}</li>
+                                <li><button onClick={handleLogOut} className=" rounded-xl bg-orange-500 text-white border-none">Log Out</button></li>
+                            </ul>
+                        </div>
+
+                        :
                         <div className="">
                             <Link className="btn rounded-xl bg-orange-500 text-white border-none" to={'/login'}>Login</Link>
                         </div>

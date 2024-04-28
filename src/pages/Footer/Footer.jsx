@@ -19,7 +19,7 @@ const Footer = () => {
             <aside className="justify-center text-center items-center">
 
                {/* react icon */}
-               <p className="pl-24 p-4"><FaLocationDot className="text-4xl"></FaLocationDot></p>
+               <p className="pl-20 p-4"><FaLocationDot className="text-4xl"></FaLocationDot></p>
                 <p className="font-semibold text-2xl">
                     Address
                 </p>
@@ -27,7 +27,7 @@ const Footer = () => {
             </aside>
             <aside>
                {/* react icon */}
-               <p className="pl-24 p-4"> <MdEmail className="text-4xl"></MdEmail></p>
+               <p className="pl-20 p-4"> <MdEmail className="text-4xl"></MdEmail></p>
                 <p className="font-semibold text-2xl">
                     Email
                 </p>
