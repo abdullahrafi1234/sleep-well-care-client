@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const AddTouristsSpot = () => {
 
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
 
     const handleAddSpot = e => {
         e.preventDefault()
@@ -18,32 +18,33 @@ const AddTouristsSpot = () => {
         const average = form.average.value;
         const description = form.description.value;
         const photo = form.photo.value;
+        const visitor = form.visitor.value;
         const email = form.email.value
 
-        const addSpot = {name, tourist, location, travel, seasonality, average, description, photo, email}
+        const addSpot = { name, tourist, location, travel, seasonality, average, description, photo, email, visitor }
 
         console.log(addSpot);
 
         // send data to the server
-        fetch('http://localhost:8000/addTouristsSpot',{
+        fetch('http://localhost:8000/addTouristsSpot', {
             method: 'POST',
-            headers: {'content-type' : 'application/json'},
+            headers: { 'content-type': 'application/json' },
             body: JSON.stringify(addSpot)
         })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if(data.insertedId ){
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'Add Tourists Spot Successfully',
-                    icon: 'success',
-                    confirmButtonText: 'OK'
-                  })
-            }
-            form.reset()
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Add Tourists Spot Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    })
+                }
+                form.reset()
 
-        })
+            })
 
 
 
@@ -140,6 +141,20 @@ const AddTouristsSpot = () => {
                         <div className="form-control md:w-1/2">
                             <label className="label">
 
+                                <span className="label-text">Total Visitor Per Year</span>
+                            </label>
+                            <label className="input-group">
+                                <input type="text"
+                                    name="visitor" placeholder="Total Visitor Per Year" className="input input-bordered w-full" />
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div className="form-control md:w-full">
+                            <label className="label">
+
                                 <span className="label-text">Photo URL</span>
                             </label>
                             <label className="input-group">
@@ -170,11 +185,13 @@ const AddTouristsSpot = () => {
                             </label>
                             <label className="input-group">
                                 <input type="text"
-                                    name="email" 
+                                    name="email"
                                     value={user?.email} placeholder="User Email" className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>
+
+                   
 
 
                     <div className="mt-8">

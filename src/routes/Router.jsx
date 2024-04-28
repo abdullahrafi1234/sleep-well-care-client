@@ -7,6 +7,8 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import AddTouristsSpot from "../pages/AddTouristsSpot/AddTouristsSpot";
+import AllTouristsSpot from "../pages/AllTouristsSpot/AllTouristsSpot";
+import ViewDetails from "../pages/ViewDetails/ViewDetails";
 
 const Router = createBrowserRouter([
     {
@@ -30,6 +32,15 @@ const Router = createBrowserRouter([
         {
             path: '/add-tourists-spot',
             element: <AddTouristsSpot></AddTouristsSpot>
+        },
+        {
+          path:'/all-tourists-spot',
+          element: <AllTouristsSpot></AllTouristsSpot>,
+          loader: () => fetch('http://localhost:8000/addTouristsSpot')
+        },
+        {
+          path: '/view-details/:id',
+          element: <ViewDetails></ViewDetails>
         }
       ]
     },
