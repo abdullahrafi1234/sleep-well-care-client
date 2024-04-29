@@ -10,9 +10,9 @@ const AllSpots = ({ spot }) => {
             <div className="hero-content p-4 gap-12 flex-col lg:flex-row justify-start">
                 <img src={photo} className="lg:max-w-sm md:max-w-sm rounded-lg shadow-2xl justify-start" />
                 <div className="space-y-2 md:pl-8">
-                    <h1 className="text-2xl font-medium ">Name: {name}</h1>
-                    <p className="flex font-medium gap-2 items-center ">{location} <IoLocationOutline className="text-xl"></IoLocationOutline></p>
-                    <p className="">Place: {tourist}</p>
+                    <h1 className="text-2xl font-medium ">Country Name: {name}</h1>
+                    <p className="flex font-medium gap-2 items-center ">Location: {location} <IoLocationOutline className="text-xl"></IoLocationOutline></p>
+                    <p className="">Tourists Spot Name: {tourist}</p>
                     <p className="">Seasonality: {seasonality}</p>
                     <p className="">
                         Travel Time: {travel}</p>

@@ -98,7 +98,7 @@ const AddTouristsSpot = () => {
                             </label>
                             <label className="input-group">
                                 <input type="text"
-                                    name="travel" placeholder="Travel Time" className="input input-bordered w-full" />
+                                    name="travel" placeholder="like >> 7 days" className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -112,7 +112,7 @@ const AddTouristsSpot = () => {
                             </label>
                             <label className="input-group ">
                                 <input type="text"
-                                    name="seasonality" placeholder="Seasonality" className="input input-bordered w-full" />
+                                    name="seasonality" placeholder="Summer / Winter" className="input input-bordered w-full" />
                             </label>
                         </div>
                         <div className="form-control md:w-1/2">
@@ -122,7 +122,7 @@ const AddTouristsSpot = () => {
                             </label>
                             <label className="input-group">
                                 <input type="text"
-                                    name="average" placeholder="Average Cost" className="input input-bordered w-full" />
+                                    name="average" placeholder="1200$" className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>
@@ -145,7 +145,7 @@ const AddTouristsSpot = () => {
                             </label>
                             <label className="input-group">
                                 <input type="text"
-                                    name="visitor" placeholder="Total Visitor Per Year" className="input input-bordered w-full" />
+                                    name="visitor" placeholder="like >> 2500" className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>
