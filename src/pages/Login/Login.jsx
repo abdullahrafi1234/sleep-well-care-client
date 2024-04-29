@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Helmet } from "react-helmet-async";
@@ -11,7 +11,12 @@ const Login = () => {
 
     const { loginUser, googleLogin, setUser, facebookLogin } = useContext(AuthContext)
     const [error, setError] = useState('')
+    const location = useLocation()
     const navigate = useNavigate()
+
+    // console.log(location,'llll');
+
+
 
     const handleLogin = e => {
         e.preventDefault();
@@ -24,7 +29,7 @@ const Login = () => {
         loginUser(email, password)
             .then(result => {
                 console.log(result.user);
-                navigate('/')
+                navigate(location?.state ?location.state : '/')
                 Swal.fire({
                     title: 'Success!',
                     text: 'Logged in Successfully',
@@ -48,7 +53,7 @@ const Login = () => {
         googleLogin()
             .then(result => {
                 setUser(result.user)
-                navigate('/')
+                navigate(location?.state ?location.state : '/')
                 Swal.fire({
                     title: 'Success!',
                     text: 'Logged in Successfully',
@@ -66,7 +71,7 @@ const Login = () => {
         facebookLogin()
             .then(result => {
                 setUser(result.user)
-                navigate( '/' )
+                navigate(location?.state ?location.state : '/')
                 Swal.fire({
                     title: 'Success!',
                     text: 'Logged in Successfully',

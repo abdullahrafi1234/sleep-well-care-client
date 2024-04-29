@@ -23,7 +23,7 @@ const AddTouristsSpot = () => {
 
         const addSpot = { name, tourist, location, travel, seasonality, average, description, photo, email, visitor }
 
-        console.log(addSpot);
+        // console.log(addSpot);
 
         // send data to the server
         fetch('http://localhost:8000/addTouristsSpot', {
@@ -174,7 +174,7 @@ const AddTouristsSpot = () => {
                             </label>
                             <label className="input-group ">
                                 <input type="text"
-                                    name="userName"
+                                    name="userName" readOnly
                                     value={user?.displayName || "Name Not Found"} placeholder="User Name" className="input input-bordered w-full" />
                             </label>
                         </div>
@@ -185,7 +185,7 @@ const AddTouristsSpot = () => {
                             </label>
                             <label className="input-group">
                                 <input type="text"
-                                    name="email"
+                                    name="email" readOnly
                                     value={user?.email} placeholder="User Email" className="input input-bordered w-full" />
                             </label>
                         </div>

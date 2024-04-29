@@ -42,8 +42,11 @@ const Navbar = () => {
                 <div className="flex items-center gap-0">
                     {/* <p><img className="lg:w-16" src="logos.png" alt="" /></p> */}
 
-                    <a className="btn btn-ghost text-3xl text-blue-900 gap-0"><Link>
-                        <span className="font-normal">Sleep</span>Well</Link></a>
+                    <div className="btn btn-ghost text-3xl text-blue-900 gap-0">
+                        <Link>
+                            <span className="font-normal">Sleep</span>Well
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -79,9 +82,6 @@ const Navbar = () => {
 
                 }
             </div>
-            {/* <div className="navbar-end">
-            <Link className="btn rounded-xl bg-orange-500 text-white" to={'/login'}>Log in</Link>
-        </div> */}
         </div>
     );
 };
