@@ -19,12 +19,13 @@ const Home = () => {
                     {/* <a data-tooltip-id="my-tooltip" data-tooltip-content={spots.length}>
                         ◕‿‿◕
                     </a> */}
-                    <Tooltip id="my-tooltip" />
+                    
                 </Fade>
                 <div className="mt-8">
                     <Link to={'add-tourists-spot'} className="">
-                        <button className="font-bold btn-accent btn btn-outline p-4">Add Tourists Spot</button>
+                        <button data-tooltip-id="my-tooltip" data-tooltip-content={'Add If You Want'} className="font-bold btn-accent btn btn-outline p-4">Add Tourists Spot</button>
                     </Link>
+                    <Tooltip id="my-tooltip" />
                 </div>
                 <div className="grid md:grid-cols-2 gap-10">
                     {

@@ -9,6 +9,8 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import AddTouristsSpot from "../pages/AddTouristsSpot/AddTouristsSpot";
 import AllTouristsSpot from "../pages/AllTouristsSpot/AllTouristsSpot";
 import ViewDetails from "../pages/ViewDetails/ViewDetails";
+import MyList from "../pages/MyList/MyList";
+import Update from "../pages/Update/Update";
 
 const Router = createBrowserRouter([
     {
@@ -42,6 +44,14 @@ const Router = createBrowserRouter([
           path: '/view-details/:id',
           element: <ViewDetails></ViewDetails>,
           loader: ({params}) => fetch(`http://localhost:8000/addTouristsSpot/${params.id}`)
+        },
+        {
+          path: '/myList',
+          element: <MyList></MyList>
+        },
+        {
+          path: '/update',
+          element: <Update></Update>
         }
       ]
     },

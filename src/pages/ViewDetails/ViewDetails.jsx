@@ -19,7 +19,7 @@ const ViewDetails = () => {
                 <div className=" flex-col lg:flex-row">
 
                     <h1 className="text-4xl py-2 font-bold">{name}</h1>
-                    <p className="border-b border-green-300  w-[500px] "></p>
+                    <p className="border-b border-green-300  w-[220px] "></p>
 
                     <div className="bg-[#1313130D mt-8  rounded-lg text-center">
                         <img data-aos="zoom-in" data-aos-duration="1000" src={photo} className=" text-center w-full lg:h-[500px] md:h-[400px] h-[200px] rounded-lg shadow-2xl" />

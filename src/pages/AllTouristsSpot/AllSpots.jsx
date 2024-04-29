@@ -5,9 +5,6 @@ import { IoLocationOutline } from "react-icons/io5";
 const AllSpots = ({ spot }) => {
     const { name, tourist, location, travel, seasonality, average, photo, visitor, _id } = spot;
 
-    const handleViewDetails = _id => {
-        console.log(_id)
-    }
     return (
         <div data-aos="zoom-in" data-aos-duration="2000" className="hero shadow-lg p-4 rounded-lg my-16 justify-start">
             <div className="hero-content p-4 gap-12 flex-col lg:flex-row justify-start">
@@ -24,12 +21,11 @@ const AllSpots = ({ spot }) => {
 
                     <div>
                         <Link to={`/view-details/${_id}`}>
-                            <button className="btn btn-outline btn-accent">
-                                View Details
+                            <button className="btn btn-outline btn-accent">View Details
                             </button>
                         </Link>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
