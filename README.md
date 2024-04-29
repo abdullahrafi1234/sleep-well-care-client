@@ -9,5 +9,11 @@
 * Interactive dashboard for personalized content and account management.
 
 
+--npm packages
+1. React Tooltip
+2. react-awesome-reveal
+
+
+
 ## Categories
 ### Southeast Asia
