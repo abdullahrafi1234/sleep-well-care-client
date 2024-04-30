@@ -9,7 +9,7 @@ const MyList = () => {
     const [lists, setLists] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:8000/myList/${user?.email}`)
+        fetch(`https://ten-assignment-server-alpha.vercel.app/myList/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -31,7 +31,7 @@ const MyList = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:8000/addTouristsSpot/${_id}`, {
+                fetch(`https://ten-assignment-server-alpha.vercel.app/addTouristsSpot/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -43,6 +43,10 @@ const MyList = () => {
                                 text: "Your Tourists Spot has been deleted.",
                                 icon: "success"
                             });
+                            // remove from ui 
+
+                            const remaining = lists.filter(list => list._id !== _id)
+                            setLists(remaining)
                         }
                     })
             }

@@ -30,7 +30,7 @@ const Update = () => {
         console.log(updateSpot);
 
         // send data to the server
-        fetch(`http://localhost:8000/addTouristsSpot/${_id}`, {
+        fetch(`https://ten-assignment-server-alpha.vercel.app/addTouristsSpot/${_id}`, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(updateSpot)
@@ -47,6 +47,7 @@ const Update = () => {
                     })
                 }
                 form.reset()
+                
 
             })
 
