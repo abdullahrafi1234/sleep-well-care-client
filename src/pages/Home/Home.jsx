@@ -5,6 +5,7 @@ import { Fade } from "react-awesome-reveal";
 import { Tooltip } from 'react-tooltip'
 import ExtraOne from "../ExtraOne/ExtraOne";
 import ExtraTwo from "../ExtraOne/ExtraTwo";
+import Countries from "../Countries/Countries";
 
 
 const Home = () => {
@@ -17,11 +18,11 @@ const Home = () => {
             {/* tourists spot section */}
             <div className="mt-16 text-center space-y-4">
                 <Fade>
-                    <h3 className="text-4xl text-center font-bold">Our Popular Services</h3>
+                    <h3 className="text-4xl text-center font-bold">Our Tourists Spot</h3>
                     {/* <a data-tooltip-id="my-tooltip" data-tooltip-content={spots.length}>
                         ◕‿‿◕
                     </a> */}
-                    
+
                 </Fade>
                 <div className="mt-8">
                     <Link to={'add-tourists-spot'} className="">
@@ -36,10 +37,8 @@ const Home = () => {
 
                 </div>
             </div>
-
-            <h3>countries section</h3>
+            <Countries></Countries>
             <ExtraOne></ExtraOne>
-            <h3>extra 2</h3>
             <ExtraTwo></ExtraTwo>
         </div>
     );
