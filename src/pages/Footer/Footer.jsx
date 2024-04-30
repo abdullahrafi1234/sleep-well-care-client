@@ -15,11 +15,19 @@ const Footer = () => {
                 </div>
             </nav>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-48 gap-4 pb-8 border-b border-base-300">
+            <div className="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 lg:gap-16 gap-4 pb-8 border-b border-base-300">
                 <aside className="justify-center text-center items-center">
 
                     {/* react icon */}
-                    <p className="pl-20 p-4"><FaLocationDot className="text-4xl"></FaLocationDot></p>
+                    <p className="font-medium text-4xl text-blue-700 gap-0">
+                       Sleep <span className="gap-0 font-bold">Well</span>
+                    </p>
+                    <p className="pt-1 font-semibold">Tourism and Hospitality Management</p>
+                </aside>
+                <aside className="justify-center text-center items-center">
+
+                    {/* react icon */}
+                    <p className="lg:pl-20 md:pl-16 pl-20 p-4"><FaLocationDot className="text-4xl"></FaLocationDot></p>
                     <p className="font-semibold text-2xl">
                         Address
                     </p>

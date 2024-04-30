@@ -1,25 +1,25 @@
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import CountryCard from './CountryCard';
+// import CountryCard from './CountryCard';
 
 const Country = ({ country }) => {
     const { image, description, name } = country;
 
-    const [countryCard , setCountryCard] = useState([])
-    console.log("country9 data",countryCard);
+    // const [countryCard , setCountryCard] = useState([])
+    // console.log("country9 data",countryCard);
 
 
-    useEffect(() => {
-        fetch(`https://ten-assignment-server-alpha.vercel.app/countryCard/${name}`)
-        .then(res => res.json())
-        .then(data => {
-            setCountryCard(data)
-        })
-    },[name])
+    // useEffect(() => {
+    //     fetch(`https://ten-assignment-server-alpha.vercel.app/countryCard/${name}`)
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         setCountryCard(data)
+    //     })
+    // },[name])
 
     return (
-        <Link to={'/countryCard'}>
+        <Link to={`/countryCard/${name}`}>
             <div>
                 <div>
                     <div className="card bg-base-100 shadow-xl">
@@ -36,6 +36,7 @@ const Country = ({ country }) => {
                         </div>
                         <div className="card-body  pl-14">
                             <h2 className="card-title font-bold">{name}</h2>
+
                             <div className=" my-4 border border-dotted border-gray-300">
 
                             </div>
@@ -44,9 +45,9 @@ const Country = ({ country }) => {
                         <div className="flex pl-14  pr-14 justify-between pb-8">
                             <p className=""> <span className="font-bold">Description: </span> {description}</p>
                         </div>
-                        {
+                        {/* {
                             countryCard.map(card => <CountryCard key={card._id}></CountryCard>)
-                        }
+                        } */}
                     </div>
                 </div>
             </div>

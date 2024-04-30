@@ -1,13 +1,19 @@
+import { useLoaderData } from "react-router-dom";
 
 
 const CountryCard = () => {
 
-
-
+    const card = useLoaderData()
+    console.log(card)
 
     return (
         <div>
-            <h3>Country card here</h3>
+            <h3>card card</h3>
+            {
+                // card.map( car => <p>hellp</p>)
+            }
+
+
         </div>
     );
 };

@@ -1,11 +1,24 @@
-
+import { Typewriter } from 'react-simple-typewriter'
 
 const ExtraOne = () => {
     return (
         <div>
-            <div className='p-10'>
-                <h1 className='text-center text-rose-950 mt-10 text-5xl font-semibold'>Frequently Asked Questions</h1>
+
+            <div className="text-4xl mt-16 p-18 text-stone-700 text-center font-bold">
+                <Typewriter
+                    words={['Frequently Asked Questions']}
+                    loop={true}
+                    cursor
+                    cursorStyle='.'
+                    typeSpeed={350}
+                    deleteSpeed={50}
+                    delaySpeed={2000}
+                />
             </div>
+
+            {/* <div className='p-10'>
+                <h1 className='text-center text-rose-950 mt-10 text-5xl font-semibold'>Frequently Asked Questions</h1>
+            </div> */}
             <div className="join join-vertical w-full p-10">
                 <div className="collapse collapse-arrow join-item border border-base-300">
                     <input type="radio" name="my-accordion-4" defaultChecked />

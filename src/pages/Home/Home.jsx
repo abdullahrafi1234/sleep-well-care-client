@@ -6,6 +6,7 @@ import { Tooltip } from 'react-tooltip'
 import ExtraOne from "../ExtraOne/ExtraOne";
 import ExtraTwo from "../ExtraOne/ExtraTwo";
 import Countries from "../Countries/Countries";
+import { Typewriter } from "react-simple-typewriter";
 
 
 const Home = () => {
@@ -18,7 +19,18 @@ const Home = () => {
             {/* tourists spot section */}
             <div className="mt-16 text-center space-y-4">
                 <Fade>
-                    <h3 className="text-4xl text-center font-bold">Our Tourists Spot</h3>
+                    {/* <h3 className="text-4xl text-center font-bold">Our Tourists Spot</h3> */}
+                    <div className="text-4xl mt-24 my-16 text-stone-700 text-center font-bold">
+                <Typewriter
+                    words={['Our Tourists Spot']}
+                    loop={true}
+                    cursor
+                    cursorStyle='.'
+                    typeSpeed={350}
+                    deleteSpeed={50}
+                    delaySpeed={2000}
+                />
+            </div>
                     {/* <a data-tooltip-id="my-tooltip" data-tooltip-content={spots.length}>
                         ◕‿‿◕
                     </a> */}

@@ -8,7 +8,7 @@ const ViewDetails = () => {
     const spots = useLoaderData()
 
     const { name, tourist, location, travel, seasonality, average, description, photo, visitor } = spots;
-    // console.log(spots)
+    console.log(spots)
    
     return (
         <div>
