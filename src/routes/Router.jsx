@@ -23,7 +23,7 @@ const Router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('https://ten-assignment-server-alpha.vercel.app/addTouristsSpot')
+        loader: () => fetch(' https://ten-assignment-server-cl7yey4lr.vercel.app/addTouristsSpot')
       },
       {
         path: '/login',
@@ -42,14 +42,14 @@ const Router = createBrowserRouter([
       {
         path: '/all-tourists-spot',
         element: <AllTouristsSpot></AllTouristsSpot>,
-        loader: () => fetch('https://ten-assignment-server-alpha.vercel.app/addTouristsSpot')
+        loader: () => fetch(' https://ten-assignment-server-cl7yey4lr.vercel.app/addTouristsSpot')
       },
       {
         path: '/view-details/:id',
         element: <PrivateRoute>
           <ViewDetails></ViewDetails>
         </PrivateRoute>,
-        loader: ({ params }) => fetch(`https://ten-assignment-server-alpha.vercel.app/addTouristsSpot/${params.id}`)
+        loader: ({ params }) => fetch(` https://ten-assignment-server-cl7yey4lr.vercel.app/addTouristsSpot/${params.id}`)
       },
       {
         path: '/myList',
@@ -62,14 +62,14 @@ const Router = createBrowserRouter([
         element: <PrivateRoute>
           <Update></Update>
         </PrivateRoute>,
-        loader: ({ params }) => fetch(`https://ten-assignment-server-alpha.vercel.app/addTouristsSpot/${params.id}`)
+        loader: ({ params }) => fetch(` https://ten-assignment-server-cl7yey4lr.vercel.app/addTouristsSpot/${params.id}`)
       },
       {
         path: '/countryCard/:id',
         element:<PrivateRoute>
           <CountryCard></CountryCard>
         </PrivateRoute>,
-        loader: ({ params }) => fetch(`https://ten-assignment-server-alpha.vercel.app/countryCard/${params.id}`)
+        loader: ({ params }) => fetch(` https://ten-assignment-server-cl7yey4lr.vercel.app/countryCard/${params.id}`)
       }
     ]
   },

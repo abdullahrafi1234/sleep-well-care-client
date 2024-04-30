@@ -26,7 +26,7 @@ const AddTouristsSpot = () => {
         // console.log(addSpot);
 
         // send data to the server
-        fetch('https://ten-assignment-server-alpha.vercel.app/addTouristsSpot', {
+        fetch(' https://ten-assignment-server-cl7yey4lr.vercel.app/addTouristsSpot', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(addSpot)

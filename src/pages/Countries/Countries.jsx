@@ -8,7 +8,7 @@ const Countries = () => {
     const [countries, setCountries] = useState([])
 
     useEffect(() => {
-        fetch('https://ten-assignment-server-alpha.vercel.app/countries')
+        fetch(' https://ten-assignment-server-cl7yey4lr.vercel.app/countries')
         .then(res => res.json())
         .then(data => {
   

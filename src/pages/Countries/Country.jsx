@@ -11,7 +11,7 @@ const Country = ({ country }) => {
 
 
     // useEffect(() => {
-    //     fetch(`https://ten-assignment-server-alpha.vercel.app/countryCard/${name}`)
+    //     fetch(` https://ten-assignment-server-cl7yey4lr.vercel.app/countryCard/${name}`)
     //     .then(res => res.json())
     //     .then(data => {
     //         setCountryCard(data)

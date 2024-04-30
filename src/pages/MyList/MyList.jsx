@@ -9,7 +9,7 @@ const MyList = () => {
     const [lists, setLists] = useState([])
 
     useEffect(() => {
-        fetch(`https://ten-assignment-server-alpha.vercel.app/myList/${user?.email}`)
+        fetch(` https://ten-assignment-server-cl7yey4lr.vercel.app/myList/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -31,7 +31,7 @@ const MyList = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`https://ten-assignment-server-alpha.vercel.app/addTouristsSpot/${_id}`, {
+                fetch(` https://ten-assignment-server-cl7yey4lr.vercel.app/addTouristsSpot/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
