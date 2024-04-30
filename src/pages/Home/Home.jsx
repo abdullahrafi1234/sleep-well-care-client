@@ -3,6 +3,8 @@ import Slider from "../Slider/Slider";
 import Tourists from "../Tourists/Tourists";
 import { Fade } from "react-awesome-reveal";
 import { Tooltip } from 'react-tooltip'
+import ExtraOne from "../ExtraOne/ExtraOne";
+import ExtraTwo from "../ExtraOne/ExtraTwo";
 
 
 const Home = () => {
@@ -36,8 +38,9 @@ const Home = () => {
             </div>
 
             <h3>countries section</h3>
-            <h3>extra 1</h3>
+            <ExtraOne></ExtraOne>
             <h3>extra 2</h3>
+            <ExtraTwo></ExtraTwo>
         </div>
     );
 };

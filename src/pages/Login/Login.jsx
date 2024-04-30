@@ -116,7 +116,7 @@ const Login = () => {
                 <p className="text-red-600 text-center">{error}</p>
 
                 <div className="form-control mt-6">
-                    <button className="btn bg-orange-500 text-white">Login</button>
+                    <button className="btn bg-blue-400 text-white">Login</button>
                 </div>
             </form>
             <p className="text-center">or</p>

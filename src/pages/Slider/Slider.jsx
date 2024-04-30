@@ -31,7 +31,7 @@ const Slider = () => {
                                 <div className="space-y-4 pl-12">
                                     <h1 className="text-5xl font-bold mb-12">Welcome to SleepWell</h1>
                                     <p>Showcase your range of accommodations, from cozy rooms to lavish suites, emphasizing comfort, style, and amenities.</p>
-                                    <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                                    <button className="btn text-white font-bold bg-blue-400">Explore More</button>
 
                                 </div>
                             </div>
@@ -48,7 +48,7 @@ const Slider = () => {
                                 <div className="space-y-4 pl-12">
                                     <h1 className="text-5xl font-bold mb-12">Impeccable Service</h1>
                                     <p>Highlight your commitment to exceptional service, ensuring guests feel pampered and well-cared for throughout their stay.</p>
-                                    <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                                    <button className="btn text-white font-bold bg-blue-400">Explore More</button>
 
                                 </div>
                             </div>
@@ -65,7 +65,7 @@ const Slider = () => {
                                 <div className="space-y-4 pl-12">
                                     <h1 className="text-5xl font-bold mb-12">Exquisite Dining Experience</h1>
                                     <p>Feature your on-site dining options, whether its a gourmet restaurant, cozy café, or stylish bar, focusing on the culinary delights and ambiance.</p>
-                                    <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                                    <button className="btn text-white font-bold bg-blue-400">Explore More</button>
 
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ const Slider = () => {
                                 <div className="space-y-4 pl-12">
                                     <h1 className="text-5xl font-bold mb-12">Local Experiences</h1>
                                     <p>Promote nearby attractions, activities, and experiences that guests can enjoy during their stay, enhancing their overall visit.</p>
-                                    <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                                    <button className="btn text-white font-bold bg-blue-400">Explore More</button>
 
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ const Slider = () => {
                                 <div className="space-y-4 pl-12">
                                     <h1 className="text-5xl font-bold mb-12">Special Offers and Packages</h1>
                                     <p>Present any current promotions, deals, or packages available to entice visitors to book their stay with you.</p>
-                                    <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                                    <button className="btn text-white font-bold bg-blue-400">Explore More</button>
 
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ const Slider = () => {
                                 <div className="space-y-4 pl-12">
                                     <h1 className="text-5xl font-bold mb-12">Guest Reviews and Testimonials</h1>
                                     <p>Share positive feedback from previous guests, building trust and credibility by showcasing real experiences and satisfaction.</p>
-                                    <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                                    <button className="btn text-white font-bold bg-blue-400">Explore More</button>
 
                                 </div>
                             </div>

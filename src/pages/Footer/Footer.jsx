@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 const Footer = () => {
     return (
 
-            <footer className="footer footer-center p-10 bg-base-200 text-base-content mt-44 ">
+            <footer className="footer footer-center p-10 bg-[#cffafe] text-base-content mt-44 ">
             <nav className="border-b pb-8 pt-4 border-green-400">
                 <div className="grid grid-flow-col gap-6">
                     <a href="https://www.facebook.com/rafis.bird.house"><FaFacebook className="text-3xl text-blue-700"></FaFacebook></a>

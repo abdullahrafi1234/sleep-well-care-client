@@ -40,9 +40,7 @@ const Router = createBrowserRouter([
       },
       {
         path: '/all-tourists-spot',
-        element: <PrivateRoute>
-          <AllTouristsSpot></AllTouristsSpot>
-        </PrivateRoute>,
+        element: <AllTouristsSpot></AllTouristsSpot>,
         loader: () => fetch('http://localhost:8000/addTouristsSpot')
       },
       {

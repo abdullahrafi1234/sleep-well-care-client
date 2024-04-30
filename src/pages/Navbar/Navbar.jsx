@@ -71,13 +71,13 @@ const Navbar = () => {
                             </div>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-lg w-[120px]">
                                 <li>{user?.displayName || 'Name Not Found'}</li>
-                                <li><button onClick={handleLogOut} className=" rounded-xl bg-orange-500 text-white border-none">Log Out</button></li>
+                                <li><button onClick={handleLogOut} className=" rounded-xl bg-[#38bdf8] text-white border-none">Log Out</button></li>
                             </ul>
                         </div>
 
                         :
                         <div className="">
-                            <Link className="btn rounded-xl bg-orange-500 text-white border-none" to={'/login'}>Login</Link>
+                            <Link className="btn rounded-xl bg-[#38bdf8] text-white border-none" to={'/login'}>Login</Link>
                         </div>
 
                 }
