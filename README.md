@@ -12,6 +12,8 @@
 --npm packages
 1. React Tooltip
 2. react-awesome-reveal
+3. react-simple-typewriter
+
 
 
 
