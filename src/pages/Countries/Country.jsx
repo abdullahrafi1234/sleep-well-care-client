@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import CountryCard from './CountryCard';
 
 const Country = ({ country }) => {
-    const { image, description, name } = country;
+    const { image, description, name, _id } = country;
 
     // const [countryCard , setCountryCard] = useState([])
     // console.log("country9 data",countryCard);
@@ -19,7 +19,7 @@ const Country = ({ country }) => {
     // },[name])
 
     return (
-        <Link to={`/countryCard/${name}`}>
+        <Link to={`/countryCard/${_id}`}>
             <div>
                 <div>
                     <div className="card bg-base-100 shadow-xl">

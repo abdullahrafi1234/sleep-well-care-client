@@ -65,11 +65,11 @@ const Router = createBrowserRouter([
         loader: ({ params }) => fetch(`https://ten-assignment-server-alpha.vercel.app/addTouristsSpot/${params.id}`)
       },
       {
-        path: '/countryCard/:name',
+        path: '/countryCard/:id',
         element:<PrivateRoute>
           <CountryCard></CountryCard>
         </PrivateRoute>,
-        loader: ({ params }) => fetch(`https://ten-assignment-server-alpha.vercel.app/countryCard/${params.name}`)
+        loader: ({ params }) => fetch(`https://ten-assignment-server-alpha.vercel.app/countryCard/${params.id}`)
       }
     ]
   },
